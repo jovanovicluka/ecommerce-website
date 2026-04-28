@@ -62,6 +62,15 @@ const CheckoutPage = () => {
                                 />
                             ))
                         )}
+                        {cartItems.length >= 1 && (
+                            <button
+                                onClick={() => clearCart()}
+                                style={{ marginTop: '10px' }}
+                                className='btn btn-secondary'
+                            >
+                                Clear Cart
+                            </button>
+                        )}
                     </div>
 
                     <div className='checkout-summary'>
